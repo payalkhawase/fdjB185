@@ -16,7 +16,7 @@ public class HomeController {
 
 	@Autowired
 	StudentServiceI ssi; 
-	 
+	  
 	@PutMapping("update/{rollno}")
 	public ResponseEntity<Student> putMethodName(@PathVariable int rollno, @RequestBody Student per) {
 		//TODO: process PUT request

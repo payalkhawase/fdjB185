@@ -22,7 +22,6 @@ public class HomeController {
 		Student stu= ssi.deleteStudent(rollno);
 		return new ResponseEntity<Student>(stu, HttpStatus.ACCEPTED);
 		
-		
 	}
 	
 }

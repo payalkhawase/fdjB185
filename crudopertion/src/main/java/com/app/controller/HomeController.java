@@ -21,7 +21,6 @@ public class HomeController {
 	public ResponseEntity<Student> putMethodName(@PathVariable int rollno, @RequestBody Student per) {
 		//TODO: process PUT request
 		Student so = ssi.updateData(rollno,per);
-		System.out.println("data updated");
 		
 		return new ResponseEntity<Student>(so,HttpStatus.OK);
 	}

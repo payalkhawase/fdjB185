@@ -8,4 +8,6 @@ import com.app.model.Student;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Integer>{
 
+	public Student getStudent(int rollno);
+
 }

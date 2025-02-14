@@ -55,10 +55,12 @@ public class HomeController {
     
     	@PutMapping("update/{rollno}")
 	public ResponseEntity<Student> putMethodName(@PathVariable int rollno, @RequestBody Student per) {
-		//TODO: process PUT request
-		Student so = ssi.updateData(rollno,per);
+
+    		Student so = ssi.updateData(rollno,per);
 		
 		return new ResponseEntity<Student>(so,HttpStatus.OK);
 	}
 
+    	
+    	
 }

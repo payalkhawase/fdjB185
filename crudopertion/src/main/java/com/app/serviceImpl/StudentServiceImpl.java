@@ -18,6 +18,7 @@ public class StudentServiceImpl implements StudentServiceI{
 	public Student updateData(int rollno, Student per) {
 		// TODO Auto-generated method stub
 		return sr.save(per);
+	}
 	@Override
 
 	public Student deleteStudent(int rollno) {

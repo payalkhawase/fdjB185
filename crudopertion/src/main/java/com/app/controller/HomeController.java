@@ -29,7 +29,7 @@ public class HomeController {
 		
 		Student stu= ssi.deleteStudent(rollno);
 		return new ResponseEntity<Student>(stu, HttpStatus.ACCEPTED);
-		
+	}
 		
 
 	@PostMapping("/addData")
@@ -37,13 +37,14 @@ public class HomeController {
 		
 		Student stu=ssi.saveAllData(s);
 		System.out.println(stu);
+		
 		return new ResponseEntity<Student>(stu,HttpStatus.CREATED);
 
 	}
     
     	@PutMapping("update/{rollno}")
 	public ResponseEntity<Student> putMethodName(@PathVariable int rollno, @RequestBody Student per) {
-		//TODO: process PUT request
+	
 		Student so = ssi.updateData(rollno,per);
 		
 		return new ResponseEntity<Student>(so,HttpStatus.OK);

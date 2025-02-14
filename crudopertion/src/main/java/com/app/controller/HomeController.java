@@ -20,7 +20,7 @@ public class HomeController {
 	public ResponseEntity<Student> addAllData(@RequestBody Student s){
 		
 		Student stu=ssi.saveAllData(s);
-		
+		System.out.println(stu);
 		return new ResponseEntity<Student>(stu,HttpStatus.CREATED);
 	}
 	

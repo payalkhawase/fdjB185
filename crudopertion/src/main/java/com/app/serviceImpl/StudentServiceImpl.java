@@ -12,7 +12,7 @@ public class StudentServiceImpl implements StudentServiceI{
 
 	@Autowired
 	StudentRepository sr;
-
+ 
 	@Override
 	public Student updateData(int rollno, Student per) {
 		// TODO Auto-generated method stub

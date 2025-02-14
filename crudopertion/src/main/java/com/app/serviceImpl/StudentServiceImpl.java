@@ -15,7 +15,30 @@ public class StudentServiceImpl implements StudentServiceI{
 
 	@Override
 	public Student getStudent(int rollno) {
-	Student s=  sr.getStudent(rollno);
-		return s;
+	Student st=  sr.getStudent(rollno);
+		return st;
+	}
+ 
+	@Override
+	public Student updateData(int rollno, Student per) {
+		// TODO Auto-generated method stub
+		return sr.save(per);
+	}
+	
+	@Override
+
+	public Student deleteStudent(int rollno) {
+		//sr.deleteByRollno(rollno);
+		sr.deleteById(rollno);
+		System.out.println("user deleted");
+		return null;
+	}
+		
+
+	public Student saveAllData(Student s) {
+		
+		Student st=sr.save(s);
+		return st;
+
 	}
 }

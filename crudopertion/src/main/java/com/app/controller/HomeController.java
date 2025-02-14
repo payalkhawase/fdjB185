@@ -56,8 +56,6 @@ public class HomeController {
 	public ResponseEntity<Student> putMethodName(@PathVariable int rollno, @RequestBody Student per) {
 
     		Student so = ssi.updateData(rollno,per);
-
-		Student so = ssi.updateData(rollno,per);
 		
 		return new ResponseEntity<Student>(so,HttpStatus.OK);
 	}    	

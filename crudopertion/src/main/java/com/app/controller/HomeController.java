@@ -15,7 +15,7 @@ import com.app.servicei.StudentServiceI;
 public class HomeController { 
 
 	@Autowired
-	StudentServiceI ssi;
+	StudentServiceI ssi; 
 	
 	@PutMapping("update/{rollno}")
 	public ResponseEntity<Student> putMethodName(@PathVariable int rollno, @RequestBody Student per) {

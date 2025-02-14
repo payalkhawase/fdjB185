@@ -20,7 +20,7 @@ public class StudentServiceImpl implements StudentServiceI{
 		sr.deleteById(rollno);
 		System.out.println("user deleted");
 		return null;
-		
+	}	
 
 	public Student saveAllData(Student s) {
 		

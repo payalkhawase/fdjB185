@@ -37,6 +37,7 @@ public class HomeController {
 		
 		Student stu=ssi.saveAllData(s);
 		System.out.println(stu);
+		
 		return new ResponseEntity<Student>(stu,HttpStatus.CREATED);
 
 	}

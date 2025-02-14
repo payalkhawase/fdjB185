@@ -12,7 +12,7 @@ import com.app.model.Student;
 import com.app.servicei.StudentServiceI;
 
 @RestController
-public class HomeController {
+public class HomeController { 
 
 	@Autowired
 	StudentServiceI ssi;

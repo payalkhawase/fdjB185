@@ -14,11 +14,19 @@ public class StudentServiceImpl implements StudentServiceI{
 	StudentRepository sr;
 
 	@Override
+
 	public Student deleteStudent(int rollno) {
 		//sr.deleteByRollno(rollno);
 		sr.deleteById(rollno);
 		System.out.println("user deleted");
 		return null;
+	}
 		
+
+	public Student saveAllData(Student s) {
+		
+		Student st=sr.save(s);
+		return st;
+
 	}
 }

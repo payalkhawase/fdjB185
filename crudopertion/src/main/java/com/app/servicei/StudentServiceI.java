@@ -6,4 +6,4 @@ public interface StudentServiceI {
 
 	public Student updateData(int rollno, Student per);
 
-}
+} 

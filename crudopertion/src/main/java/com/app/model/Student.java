@@ -18,4 +18,5 @@ public class Student {
 	private long mobno;
 	private float marks;
 
+	
 }
